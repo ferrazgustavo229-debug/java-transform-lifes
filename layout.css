@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+header {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-2) var(--space-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-3);
+
+.navbar a {
+  color: var(--color-white);
+  font-weight: 600;
+
+footer {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--space-3);
+}
+}

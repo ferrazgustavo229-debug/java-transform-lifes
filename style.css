@@ -1,4 +1,4 @@
-/* ======= ESTILO GERAL ======= */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
 }
 
-/* ======= CABEÇALHO ======= */
+
 header {
   background-color: #0077b6;
   color: #fff;
@@ -46,7 +46,7 @@ nav a:hover {
   color: #ffd60a;
 }
 
-/* ======= CONTEÚDO PRINCIPAL ======= */
+
 main {
   flex: 1;
   padding: 2rem;
@@ -77,7 +77,7 @@ p, li {
   margin-bottom: 0.5rem;
 }
 
-/* ======= IMAGENS ======= */
+
 img {
   width: 100%;
   height: auto;
@@ -85,7 +85,7 @@ img {
   margin-top: 0.5rem;
 }
 
-/* ======= FORMULÁRIOS ======= */
+
 form {
   display: flex;
   flex-direction: column;
@@ -133,7 +133,7 @@ button:hover {
   background-color: #023e8a;
 }
 
-/* ======= RODAPÉ ======= */
+
 footer {
   text-align: center;
   background-color: #0077b6;
@@ -143,7 +143,7 @@ footer {
   margin-top: auto;
 }
 
-/* ======= RESPONSIVIDADE ======= */
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;

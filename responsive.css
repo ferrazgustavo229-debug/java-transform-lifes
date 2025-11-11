@@ -1,0 +1,33 @@
+@media (max-width: 480px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    font-size: var(--font-lg);
+    color: var(--color-white);
+    border: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar ul {
+    display: flex;
+  }
+
+  .container {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
