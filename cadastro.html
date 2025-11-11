@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastre-se na plataforma da ONG Transform Lifes e participe de nossos projetos.">
+  <title>Transform Lifes | Cadastro</title>
+</head>
+  <script>
+    function aplicarMascaraCPF(campo) {
+      campo.value = campo.value.replace(/\D/g, '')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+    }
+
+    function aplicarMascaraTelefone(campo) {
+      campo.value = campo.value.replace(/\D/g, '')
+        .replace(/(\d{2})(\d)/, '($1) $2')
+        .replace(/(\d{5})(\d{4})$/, '$1-$2');
+    }
+
+    function aplicarMascaraCEP(campo) {
+      campo.value = campo.value.replace(/\D/g, '')
+        .replace(/(\d{5})(\d{3})$/, '$1-$2');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Voluntário</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="formulario">
+      <h2 id="formulario">Preencha seus dados</h2>
+      <form>
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" maxlength="14" oninput="aplicarMascaraCPF(this)" required>
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" maxlength="15" oninput="aplicarMascaraTelefone(this)" required>
+
+          <label for="data">Data de Nascimento:</label>
+          <input type="date" id="data" name="data" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Endereço</legend>
+
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" required>
+
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" maxlength="9" oninput="aplicarMascaraCEP(this)" required>
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required>
+
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado" maxlength="2" required>
+        </fieldset>
+
+        <button type="submit">Enviar Cadastro</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Transform Lifes. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
