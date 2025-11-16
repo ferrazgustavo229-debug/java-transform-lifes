@@ -163,4 +163,17 @@ body {
   font-size: 16px;
 }
 
+:focus {
+  outline: 3px solid #000;
+  outline-offset: 4px;
+}
+
+.darkmode {
+  background-color: #111 !important;
+  color: #eee !important;
+}
+
+.high-contrast {
+  filter: contrast(180%);
+}
 
