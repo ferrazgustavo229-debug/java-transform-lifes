@@ -1,0 +1,51 @@
+.container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-24);
+}
+header {
+  background: var(--color-primary);
+  color: white;
+  padding: var(--space-16);
+}
+
+nav ul {
+  display: flex;
+  gap: var(--space-16);
+  list-style: none;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background: white;
+  color: black;
+  padding: var(--space-8);
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+@media (max-width: 576px) {}
+@media (max-width: 360px) {}

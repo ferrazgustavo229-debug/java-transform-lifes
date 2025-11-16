@@ -1,0 +1,24 @@
+:root {
+     --color-primary: #3B82F6;
+  --color-primary-dark: #1E40AF;
+  --color-secondary: #10B981;
+  --color-secondary-dark: #065F46;
+
+  --gray-100: #F3F4F6;
+  --gray-300: #D1D5DB;
+  --gray-600: #4B5563;
+  --gray-900: #111827;
+
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 20px;
+  --fs-xl: 28px;
+
+    --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+}

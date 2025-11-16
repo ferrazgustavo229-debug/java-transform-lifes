@@ -1,0 +1,22 @@
+*{
+     margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--fs-md);
+  background: var(--gray-100);
+  color: var(--gray-900);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
